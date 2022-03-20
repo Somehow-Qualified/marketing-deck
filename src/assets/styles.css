@@ -270,22 +270,27 @@ a.block:hover {
 .link-btn {
   padding: 1rem;
   margin: 1rem -1rem -2rem;
-  background-color: var(--color-text, #000);
-  color: var(--color-background, #eee);
   display: flex;
   justify-content: center;
+  background-color: var(--color-background, #eee);
+  color: var(--color-text, #000);
+  border: 3px solid var(--color-text, #000);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
-  border: 3px solid var(--color-background, #eee);
 }
 
 .link-btn a {
   width: 100%;
+  color: var(--color-text, #000);
 }
 
 .link-btn:hover {
-  background-color: var(--color-background, #eee);
-  color: var(--color-text, #000);
-  border: 3px solid var(--color-text, #000);
+  background-color: var(--color-text, #000);
+  color: var(--color-background, #eee);
+  border: 3px solid var(--color-background, #eee);
+}
+
+.link-btn a:hover {
+  color: var(--color-background, #eee);
 }
 
 @media screen and (min-width: 493px) {
