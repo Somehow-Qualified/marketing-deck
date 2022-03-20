@@ -92,7 +92,7 @@ brand:
   # For About and Contact, add your own brand color
   color_background: 2a1e42
   color_text: ffffff
-  logo: /images/logo_512.png
+  logo: /images/favicon.png
 layout: base.njk
 ---
 
