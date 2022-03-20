@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "One page website marketing deck showcasing your social influence statistics.",
   "scripts": {
+    "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
   "repository": {
