@@ -132,7 +132,7 @@ main {
   gap: 2rem;
 }
 
-a.block, .link-btn {
+a.block, .link-btn a {
   text-decoration: none;
 }
 
@@ -278,8 +278,14 @@ a.block:hover {
   border: 3px solid var(--color-background, #eee);
 }
 
-.link-btn a:hover {
-  filter: brightness(0.9);
+.link-btn a {
+  width: 100%;
+}
+
+.link-btn:hover {
+  background-color: var(--color-background, #eee);
+  color: var(--color-text, #000);
+  border: 3px solid var(--color-text, #000);
 }
 
 @media screen and (min-width: 493px) {
