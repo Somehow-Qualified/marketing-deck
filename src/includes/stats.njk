@@ -1,0 +1,213 @@
+<div class="container">
+
+{% if metrics.twitch.date_range %}
+{% if metrics.twitch.handle %}<a href="https://twitch.tv/{{ metrics.twitch.handle }}/about" data-type="twitch" class="block metrics-block">{% else %}<section data-type="twitch" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="Twitch stats overview"></div>
+    <p class="metrics-range">{{ metrics.twitch.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.twitch.viewers_average %}
+  <div class="metrics-row">
+    <dt>Average Viewers (CCV)</dt>
+    <dd>{{ metrics.twitch.viewers_average }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitch.viewers_unique %}
+  <div class="metrics-row">
+    <dt>Unique Viewers</dt>
+    <dd>{{ metrics.twitch.viewers_unique }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitch.chatters_unique %}
+  <div class="metrics-row">
+    <dt>Unique Chatters</dt>
+    <dd>{{ metrics.twitch.chatters_unique }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitch.time_streamed %}
+  <div class="metrics-row">
+    <dt>Time Streamed</dt>
+    <dd>{{ metrics.twitch.time_streamed }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitch.subscribers %}
+  <div class="metrics-row">
+    <dt>Subs</dt>
+    <dd>{{ metrics.twitch.subscribers }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitch.followers %}
+  <div class="metrics-row">
+    <dt>Followers</dt>
+    <dd>{{ metrics.twitch.followers }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.twitch.handle %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+{% if metrics.youtube.date_range !== '' %}
+{% if metrics.youtube.channel_id %}<a href="https://www.youtube.com/channel/{{ metrics.youtube.channel_id }}" data-type="youtube" class="block metrics-block">{% else %}<section data-type="youtube" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="YouTube stats overview"></div>
+    <p class="metrics-range">{{ metrics.youtube.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.youtube.viewers %}
+  <div class="metrics-row">
+    <dt>Viewers</dt>
+    <dd>{{ metrics.youtube.viewers }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.youtube.watchtime %}
+  <div class="metrics-row">
+    <dt>Watch Time</dt>
+    <dd>{{ metrics.youtube.watchtime }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.youtube.ctr_average %}
+  <div class="metrics-row">
+    <dt>CTR</dt>
+    <dd>{{ metrics.youtube.ctr_average }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.youtube.supporters %}
+  <div class="metrics-row">
+    <dt>Supporters</dt>
+    <dd>{{ metrics.youtube.supporters }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.youtube.subscribers %}
+  <div class="metrics-row">
+    <dt>Subscribers</dt>
+    <dd>{{ metrics.youtube.subscribers }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.youtube.channel_id %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+{% if metrics.twitter.date_range !== '' %}
+{% if metrics.twitter.handle %}<a href="https://twitter.com/{{ metrics.twitter.handle }}" data-type="twitter" class="block metrics-block">{% else %}<section data-type="twitter" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="Twitter stats overview"></div>
+    <p class="metrics-range">{{ metrics.twitter.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.twitter.engagement_rate %}
+  <div class="metrics-row">
+    <dt>Engagement Rate</dt>
+    <dd>{{ metrics.twitter.engagement_rate }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitter.impressions  %}
+  <div class="metrics-row">
+    <dt>Impressions</dt>
+    <dd>{{ metrics.twitter.impressions }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.twitter.followers %}
+  <div class="metrics-row">
+    <dt>Followers</dt>
+    <dd>{{ metrics.twitter.followers }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.twitter.handle %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+{% if metrics.instagram.date_range !== '' %}
+{% if metrics.instagram.handle %}<a href="https://instagram.com/{{ metrics.instagram.handle }}" data-type="instagram" class="block metrics-block">{% else %}<section data-type="instagram" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="Instagram stats overview"></div>
+    <p class="metrics-range">{{ metrics.instagram.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.instagram.engagement %}
+  <div class="metrics-row">
+    <dt>Engagement</dt>
+    <dd>{{ metrics.instagram.engagement }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.instagram.reach %}
+  <div class="metrics-row">
+    <dt>Reach</dt>
+    <dd>{{ metrics.instagram.reach }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.instagram.followers %}
+  <div class="metrics-row">
+    <dt>Followers</dt>
+    <dd>{{ metrics.instagram.followers }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.instagram.handle %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+{% if metrics.tiktok.date_range !== '' %}
+{% if metrics.tiktok.handle %}<a href="https://tiktok.com/@{{ metrics.tiktok.handle }}" data-type="tiktok" class="block metrics-block">{% else %}<section data-type="tiktok" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="TikTok stats overview"></div>
+    <p class="metrics-range">{{ metrics.tiktok.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.tiktok.engagements %}
+  <div class="metrics-row">
+    <dt>Engagements</dt>
+    <dd>{{ metrics.tiktok.engagements }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.tiktok.followers %}
+  <div class="metrics-row">
+    <dt>Followers</dt>
+    <dd>{{ metrics.tiktok.followers }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.tiktok.likes %}
+  <div class="metrics-row">
+    <dt>Likes</dt>
+    <dd>{{ metrics.tiktok.likes }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.tiktok.handle %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+{% if metrics.discord.date_range !== '' %}
+{% if metrics.discord.invite_id %}<a href="https://discord.gg/{{ metrics.discord.invite_id }}" data-type="discord" class="block metrics-block">{% else %}<section data-type="discord" class="block metrics-block">{% endif %}
+  <div class="metrics-header">
+    <div class="metrics-logo" aria-label="Discord server stats overview"></div>
+    <p class="metrics-range">{{ metrics.discord.date_range }}</p>
+  </div>
+  <dl>
+  {% if metrics.discord.members %}
+  <div class="metrics-row">
+    <dt>Members</dt>
+    <dd>{{ metrics.discord.members }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.discord.activity %}
+  <div class="metrics-row">
+    <dt>Activity</dt>
+    <dd>{{ metrics.discord.activity }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.discord.retention %}
+  <div class="metrics-row">
+  <dt>Retention</dt>
+  <dd>{{ metrics.discord.retention }}</dd>
+  </div>
+  {% endif %}
+  {% if metrics.discord.growth %}
+  <div class="metrics-row">
+    <dt>Growth</dt>
+    <dd>{{ metrics.discord.growth }}</dd>
+  </div>
+  {% endif %}
+  </dl>
+{% if metrics.discord.invite_id %}</a>{% else %}</section>{% endif %}
+{% endif %}
+
+</div>

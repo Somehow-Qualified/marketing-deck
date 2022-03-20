@@ -1,0 +1,18 @@
+{% if partnerships %}
+<div class="container">
+{% for item in partnerships %}
+  
+{% set link = item.partner_link or item.campaign_link %}
+{% set image = item.partner_logo or item.charity_logo %}
+{% set name = item.partner_name or item.charity_name %}
+{% set extra = item.partner_status or item.campaign_raised %}
+
+{% if link %}<a href="{{ link }}" class="block block-partner">{% else %}<section class="block block-partner">{% endif %}
+{% if image %}<img src="{{ image }}" alt="">{% endif %}
+<p>{{ name }}</p>
+{% if extra %}<p>{{ extra }}</p>{% endif %}
+{% if link %}</a>{% else %}</section>{% endif %}
+
+{% endfor %}
+</div>
+{% endif %}

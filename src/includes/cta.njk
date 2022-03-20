@@ -1,0 +1,12 @@
+<section class="cta">
+  {% if availability %}
+    <h2>{{ about.name }} is available for:</h2>
+    <p>{% for item in availability %}<span class="availability-tags">{{ item }}</span>{% endfor %}</p>
+  {% endif %}
+
+  {% if contact.text %}
+    <p class="link-btn">
+      {% if contact.email %}<a href="mailto:{{ contact.email }}">{{ contact.text }}</a>{% else %}{{ contact.text }}{% endif %}
+    </p>
+  {% endif %}
+</section>

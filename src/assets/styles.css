@@ -1,0 +1,298 @@
+:root {
+  /* Brands */
+  --discord-blurple: #5865F2;
+  --discord-green: #57F287;
+  --discord-yellow: #FEE75C;
+  --discord-fuchsia: #EB459E;
+  --discord-red: #ED4245;
+  --instagram-royal-blue: #405DE6;
+  --instagram-blue: #5B51D8;
+  --instagram-purple: #833AB4;
+  --instagram-dark-pink: #C13584;
+  --instagram-purple-red: #E1306C;
+  --instagram-red: #FD1D1D;
+  --instagram-dark-orange: #F56040;
+  --instagram-orange: #F77737;
+  --instagram-yellow: #FCAF45;
+  --instagram-light-yellow: #FFDC80;
+  --tiktok-razzmatazz: #FE2C55;
+  --tiktok-splash: #25F4EE;
+  --twitch-purple: #9146FF;
+  --twitter-blue: #1DA1F2;
+  --youtube-red: #FF0000;
+  --youtube-almost-black: #282828;
+
+  /* Everything else */
+  --border-radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body { 
+    background-color: #282828;
+    color: #FFF;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.sr-skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+  
+.sr-skip-link:focus,
+main:focus {
+  outline: none;
+}
+
+.sr-skip-link:active,
+.sr-skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+.sr-skip-link:focus {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 1rem;
+  transform: translateX(-50%);
+  background-color: #3d4852;
+  color: #fff;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1080px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about, .cta {
+  padding: 1rem;
+  background-color: var(--color-background, #eee);
+  color: var(--color-text, #000);
+  border-radius: var(--border-radius, 6px);
+}
+
+.about-image,
+.block > img {
+  height: 100px;
+  width: 100px;
+}
+
+.about-content {
+  padding: 1rem 0 0;
+}
+
+.about-content h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 0;
+}
+
+.availability-tags {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.25rem 0.35rem;
+  font-size: 0.85rem;
+  background-color: #000;
+  color: #FFF;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+a.block, .link-btn {
+  text-decoration: none;
+}
+
+a.block:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.block {
+  display: flex;
+  flex: 1 1 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: var(--border-radius, 6px);
+}
+
+.metrics-block[data-type="twitch"] {
+  background-color: var(--twitch-purple, #9146FF);
+  color: #FFF;
+}
+
+.metrics-block[data-type="youtube"] {
+  background-color: var(--youtube-red, #FF0000);
+  color: #FFF;
+}
+
+.metrics-block[data-type="twitter"] {
+  background-color: var(--twitter-blue, #1DA1F2);
+  color: #FFF;
+}
+
+.metrics-block[data-type="discord"] {
+  background-color: var(--discord-blurple, #5865F2);
+  color: #FFF;
+}
+
+.metrics-block[data-type="tiktok"] {
+  background-color: var(--tiktok-razzmatazz, #FE2C55);
+  color: #FFF;
+}
+
+.metrics-block[data-type="instagram"] {
+  background-color: var(--instagram-dark-pink, #C13584);
+  color: #FFF;
+}
+
+.metrics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.metrics-logo {
+  height: 3rem;
+  width: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.metrics-block[data-type="twitch"] .metrics-logo {
+  background-image: url("/images/icon-twitch.png");
+}
+
+.metrics-block[data-type="youtube"] .metrics-logo {
+  background-image: url("/images/icon-youtube.png");
+}
+
+.metrics-block[data-type="twitter"] .metrics-logo {
+  background-image: url("/images/icon-twitter.png");
+}
+
+.metrics-block[data-type="instagram"] .metrics-logo {
+  background-image: url("/images/icon-instagram.png");
+}
+
+.metrics-block[data-type="tiktok"] .metrics-logo {
+  background-image: url("/images/icon-tiktok.png");
+}
+
+.metrics-block[data-type="discord"] .metrics-logo {
+  background-image: url("/images/icon-discord.png");
+}
+
+.metrics-range {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-style: italic;
+}
+
+.metrics-block dl {
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.metrics-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.metrics-row dt,
+.metrics-row dd {
+  display: inline-block;
+}
+
+.metrics-row dd,
+.block > p:first-of-type,
+.link-btn {
+  font-weight: 700;
+}
+
+.block-charity,
+.block-partner {
+  background-color: #eee;
+  color: #000;
+  text-align: center;
+  align-items: center;
+}
+
+.block > img {
+  margin-bottom: 1rem;
+}
+
+.block > p:first-of-type,
+.block > p:last-of-type {
+  margin: 0;
+}
+
+.cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.link-btn {
+  padding: 1rem;
+  margin: 1rem -1rem -2rem;
+  background-color: var(--color-text, #000);
+  color: var(--color-background, #eee);
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border: 3px solid var(--color-background, #eee);
+}
+
+.link-btn a:hover {
+  filter: brightness(0.9);
+}
+
+@media screen and (min-width: 493px) {
+  .about {
+    flex-wrap: nowrap;
+  }
+  .about-content {
+    padding: 0 2rem;
+  }
+  .about-content h1 {
+    text-align: initial;
+  }
+  .block {
+    max-width: 306px;
+  }
+}
