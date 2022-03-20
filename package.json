@@ -1,0 +1,21 @@
+{
+  "name": "marketing-deck",
+  "version": "1.0.0",
+  "description": "One page website marketing deck showcasing your social influence statistics.",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Somehow-Qualified/marketing-deck.git"
+  },
+  "author": "m2creates",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Somehow-Qualified/marketing-deck/issues"
+  },
+  "homepage": "https://github.com/Somehow-Qualified/marketing-deck#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}

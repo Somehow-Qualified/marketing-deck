@@ -1,0 +1,12 @@
+<section class="about">
+  {% if about.image.src %}
+  <img src="{{ about.image.src }}" alt="{{ about.image.alt }}" class="about-image">
+  {% endif %}
+  <div class="about-content">
+    <h1>{{ about.name }}</h1>
+    <p>{{ about.bio }}</p>
+    {% if availability %}
+      <p>Available for: {% for item in availability %}<span class="availability-tags">{{ item }}</span>{% endfor %}</p>
+    {% endif %}
+  </div>
+</section>
