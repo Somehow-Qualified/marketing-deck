@@ -87,7 +87,7 @@ availability:
   - collaborations
 contact:
   text: Let's chat!
-  #email: hello@fatsackfails.com
+  email: hello@fatsackfails.com
 brand:
   # For About and Contact, add your own brand color
   color_background: 2a1e42
