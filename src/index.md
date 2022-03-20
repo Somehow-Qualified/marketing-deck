@@ -1,98 +1,110 @@
 ---
 about:
-  name: m2creates
+  name: Fatsack Fails
   bio: >-
-    🦄 I create things. ✨ Equal parts coffee, creativity & code. 🚧 Currently creating Stream Sites » http://streamsites.xyz (she/her)
+    (He/Him) Want to succeed with live streaming? Let's chat! Tools, tips, resources and consulting. Fan of TTRPG, weird music, & web dev.
   image:
-    src: https://pbs.twimg.com/profile_images/923739760132108288/VZ8jkL02_400x400.jpg
+    src: https://pbs.twimg.com/profile_images/1478516721883529217/TjOPABi7_400x400.jpg
     alt: 
   # Add your bio in the markdown area below
 metrics:
   twitch:
-    handle: m2creates
-    date_range: March 2022
-    viewers_average: 3.3
-    viewers_unique: 86
-    chatters_unique: 12
-    time_streamed: 10hrs
-    subscribers: 1
-    followers: 44
+    handle: fatsackfails
+    date_range: Jan - Mar 2022
+    viewers_average: 38.0
+    viewers_unique: 76
+    chatters_unique: 194
+    time_streamed: 51h10m
+    subscribers: 41
+    followers: 925
   youtube:
-    channel_id: UC79tKyGJiDzuN5fb-0ijb0Q
-    date_range: March 2022
-    viewers: 500
-    watchtime: 450hrs
-    ctr_average: 5%
-    supporters: 1
-    subscribers: 50
+    channel_id: UCxnthibwNiVFB6yibZJgq5g
+    date_range: Jan - Mar 2022
+    viewers: 946
+    watchtime: 34.1hrs
+    ctr_average: 4.7%
+    supporters: 
+    subscribers: 102
   twitter:
-    handle: m2creates
-    date_range: Jan-Mar 2022
-    engagement_rate: 1.6%
-    impressions: 6.3k
-    followers: 270
+    handle: fatsackfails
+    date_range: Jan - Mar 2022
+    engagement_rate: 3.6%
+    impressions: 50.5k
+    followers: 387
   instagram:
-    handle: m2creates
-    date_range: March 2022
-    engagement: 20
-    reach: 100
-    followers: 3
+    handle: fatsackfails
+    date_range: Jan - Mar 2022
+    engagement: 53
+    reach: 206
+    followers: 298
   tiktok:
-    handle: m2creates
-    date_range: March 2022
-    engagements: 500
-    followers: 85
-    likes: 1234
+    handle: fatsackfails
+    date_range: Jan 18 - Mar 18 2022
+    engagements: 124
+    followers: 50
+    likes: 476
   discord:
-    invite_id: 1234567
-    date_range: March 2022
-    members: 70
-    activity: 500
-    retention: 60%
-    growth: 5
+    invite_id: 0103GELTxGwRCCgaN
+    date_range: Mar 2022
+    members: 111
+    activity: 
+    retention: 
+    growth: 
 partnerships:
-  - partner_name: Somehow Qualified
-    partner_logo:
-    partner_link: https://somehowqualified.com
-    partner_status: 2020 to present
-  - partner_name: It Was Qualified, probably
-    partner_logo:
-    partner_link: 
-    partner_status: 2019
+  - partner_name: Subliminal Games
+    partner_logo: https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/1264644fecd3d89f083b4139372466bf8967ea01_full.jpg
+    partner_link: https://fatsackfails.com/posts/button-city-demo/
+    partner_status: Button City Demo/Early Access/Giveaway Promo
+  - partner_name: Hiding Spot Games
+    partner_logo: https://pbs.twimg.com/profile_images/822161238104772608/vTrHJC6d_400x400.jpg
+    partner_link: https://fatsackfails.com/posts/beacon-pines-demo/
+    partner_status: Beacon Pines Demo Promo
+  - partner_name: Lizard Hazard Games
+    partner_logo: https://pbs.twimg.com/profile_images/815933422451441664/B-VqP0hP_400x400.jpg
+    partner_link: https://fatsackfails.com/posts/lovingly-evil-full/
+    partner_status: Lovingly Evil Early Build Preview Promo
 charities:
-  - charity_name: Save the Children 2021
+  - charity_name: Gaming Tuesday 2021
     charity_logo: https://assets.tiltify.com/uploads/cause/avatar/30/save-the-children-icon-132x132.jpg
     campaign_link: https://tiltify.com/@fatsackfails/fatsackfails-gaming-tuesday-2021
     campaign_raised: >-
       Total raised: $1295.69
+  - charity_name: Gaming Tuesday 2020
+    charity_logo: https://assets.tiltify.com/uploads/cause/avatar/30/save-the-children-icon-132x132.jpg
+    campaign_link: https://tiltify.com/@fatsackfails/fatsack-fails-gaming-tuesday-2020
+    campaign_raised: >-
+      Total raised: $1000
+  - charity_name: Gaming Tuesday 2019
+    charity_logo: https://assets.tiltify.com/uploads/cause/avatar/30/save-the-children-icon-132x132.jpg
+    campaign_link: https://tiltify.com/@fatsackfails/fatsack-gaming-tuesday-2019
+    campaign_raised: >-
+      Total raised: $400
 availability:
   - sponsored streams
+  - game previews
   - sponsored social media posts
   - brand partnerships
   - collaborations
 contact:
   text: Let's chat!
-  #email: hello@melaniemagdalena.com
+  email: hello@fatsackfails.com
 brand:
   # For About and Contact, add your own brand color
-  color_background: ad0fb5
+  color_background: 2a1e42
   color_text: ffffff
-  logo: /images/logo_512.png
+  logo: /images/favicon.png
 layout: base.njk
 ---
 
 <!-- What are interests? What is your game focus? What are you currently playing? -->
-## My Interests
+## Hey there!
 
-I'm on a mission to create a web for everyone by:
-
-- blending accessibility, inclusivity, and usability
-- into web experiences, digital media, and automated systems
+I'm Ethan! I've been on Twitch since 2015. I like to stream stuff about making my live stream better. Art, graphic design, game integrations, overlays, as well as the occasional game.
 
 You can find me on various platforms creating web content!
 
 <!-- Do you have current or past partners? Keep this section to feature them. -->
-## Partners
+## Partners, Affiliates, and Sponsors
 
 {% include "partnerships.njk" %}
 
@@ -104,6 +116,6 @@ Every year, I campaign for Save the Children on Gaming Tuesday!
 {% include "charities.njk" %}
 
 <!-- Got anything else to talk about? Include it here. For example, what are some of your accolades/achievements. -->
-## Other Accolades
+## Bragging Rights/Flexes
 
-- Twitch front page, Nov 2020
+- Twitch front page, Nov 2019
