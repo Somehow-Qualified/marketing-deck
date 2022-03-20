@@ -289,7 +289,7 @@ a.block:hover {
   border: 3px solid var(--color-background, #eee);
 }
 
-.link-btn a:hover {
+.link-btn:hover a {
   color: var(--color-background, #eee);
 }
 
