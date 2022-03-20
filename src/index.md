@@ -10,46 +10,58 @@ about:
 metrics:
   twitch:
     handle: fatsackfails
+    # for a date range, list your stats
     date_range: Jan - Mar 2022
     viewers_average: 38.0
     viewers_unique: 76
     chatters_unique: 194
     time_streamed: 51h10m
+    # total audience numbers
     subscribers: 41
     followers: 925
   youtube:
     channel_id: UCxnthibwNiVFB6yibZJgq5g
+    # for a date range, list your stats
     date_range: Jan - Mar 2022
     viewers: 946
     watchtime: 34.1hrs
     ctr_average: 4.7%
+    # total audience numbers - visit your channel/about
     supporters: 
     subscribers: 102
   twitter:
     handle: fatsackfails
+    # for a date range, list your stats
     date_range: Jan - Mar 2022
     engagement_rate: 3.6%
     impressions: 50.5k
+    # total audience numbers - visit your profile page
     followers: 387
   instagram:
     handle: fatsackfails
+    # for a date range, list your stats
     date_range: Jan - Mar 2022
     engagement: 53
     reach: 206
+    # total audience numbers - visit your profile page
     followers: 298
   tiktok:
     handle: fatsackfails
+    # for a date range, list your stats
     date_range: Jan 18 - Mar 18 2022
     engagements: 124
+    # total audience numbers - visit your profile page
     followers: 50
     likes: 476
   discord:
     invite_id: 0103GELTxGwRCCgaN
     date_range: Mar 2022
-    members: 111
+    # if you have over 500 members, add your guild stats
     activity: 
     retention: 
     growth: 
+    # total audience numbers - visit "Server Settings/Members"
+    members: 111
 partnerships:
   - partner_name: Subliminal Games
     partner_logo: https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/1264644fecd3d89f083b4139372466bf8967ea01_full.jpg
